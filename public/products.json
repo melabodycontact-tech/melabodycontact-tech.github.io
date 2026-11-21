@@ -1,0 +1,44 @@
+{
+  "currency": "usd",
+  "shipping": {
+    "label": "Standard shipping",
+    "flatRateCents": 500,
+    "freeOverCents": 5000,
+    "allowedCountries": [
+      "US"
+    ]
+  },
+  "automaticTax": false,
+  "products": [
+    {
+      "id": "body-balm",
+      "name": "Body Balm",
+      "priceCents": 2500,
+      "size": "2 oz",
+      "url": "body-balm",
+      "image": "images/balm-studio-1400.webp",
+      "thumb": "images/balm-studio-700.webp",
+      "blurb": "Melt-to-the-touch balm for neck to toe softening and moisture protection."
+    },
+    {
+      "id": "face-oil",
+      "name": "Beauty Face Oil",
+      "priceCents": 2000,
+      "size": "2 fl oz",
+      "url": "face-oil",
+      "image": "images/face-oil-studio-1400.webp",
+      "thumb": "images/face-oil-studio-700.webp",
+      "blurb": "Moisturizing and balancing oil for glowy skin."
+    },
+    {
+      "id": "hair-oil",
+      "name": "Ritual Hair Oil",
+      "priceCents": 2900,
+      "size": "2 fl oz",
+      "url": "hair-oil",
+      "image": "images/hair-oil-studio-1400.webp",
+      "thumb": "images/hair-oil-studio-700.webp",
+      "blurb": "Lightweight oil for smoothing strands and caring for the scalp."
+    }
+  ]
+}

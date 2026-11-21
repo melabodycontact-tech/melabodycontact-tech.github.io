@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>connect | mela</title>
+<meta name="description" content="Get in touch with mela about an order, a product or wholesale.">
+<meta name="theme-color" content="#F4EDE2">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/cormorant-garamond-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" defer></script>
+</head>
+<body data-page="connect">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./" aria-label="mela home"><img src="images/logo.svg" alt="mela" width="72" height="70"></a>
+    <nav class="menu" aria-label="Main">
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-list">menu<svg class="chev" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5l5 5 5-5" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></button>
+      <ul class="menu-list" id="menu-list">
+        <li><a href="shop">shop</a></li>
+        <li><a href="about">about</a></li>
+        <li><a href="connect">connect</a></li>
+      </ul>
+    </nav>
+    <button class="cart-toggle" type="button" data-open-cart aria-label="Open shopping bag">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M5 8.5h14l-1.1 11.5H6.1L5 8.5z"/><path d="M9 8.5V7a3 3 0 0 1 6 0v1.5"/></svg>
+      <span class="cart-label">bag</span><span class="cart-count" hidden>0</span>
+    </button>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-intro narrow">
+  <span class="eyebrow">connect</span>
+  <h1>say hello</h1>
+  <p>Questions about an order, a product or wholesale? Send us a note.</p>
+</section>
+<section class="wrap" style="padding-bottom:5rem">
+  <div class="connect-grid">
+    <form class="contact-form">
+      <label>Name<input class="field" type="text" name="name" autocomplete="name" required></label>
+      <label>Email<input class="field" type="email" name="email" autocomplete="email" required></label>
+      <label>Message<textarea class="field" name="message" required maxlength="5000"></textarea></label>
+      <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn" type="submit">send</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+    <aside class="aside-card">
+      <h2>find us</h2>
+      <p>We are based in New York, NY.</p>
+      <p>Shop with us on Etsy as well:<br><a href="https://www.etsy.com/shop/melabotanical" target="_blank" rel="noopener">etsy.com/shop/melabotanical</a></p>
+    </aside>
+  </div>
+</section>
+<section class="section band-cream" id="questions">
+  <div class="wrap">
+    <div class="section-head"><span class="eyebrow">good to know</span><h2>questions</h2></div>
+    <div class="faq">
+      <details open><summary>shipping</summary><div class="details-body"><p>Orders ship from New York to addresses in the US. Shipping is $5, and free on orders over $50.</p></div></details>
+      <details><summary>returns and exchanges</summary><div class="details-body"><p>We accept returns and exchanges within 30 days of delivery. The buyer pays return shipping, and items need to come back in their original condition. Send us a note above to start a return.</p></div></details>
+      <details><summary>payment</summary><div class="details-body"><p>Checkout runs through Stripe and accepts Visa, Mastercard, American Express, Discover, Apple Pay and Google Pay. Your card details go straight to Stripe and are never stored on our site.</p></div></details>
+      <details><summary>storage</summary><div class="details-body"><p>Keep your balm and oils somewhere cool and out of direct sun. The amber glass helps, but heat and light can still change natural oils over time.</p></div></details>
+      <details><summary>sensitive skin</summary><div class="details-body"><p>Each product page lists every ingredient. The Body Balm has no added fragrance and contains beeswax. The face and hair oils contain essential oils. If you have sensitive skin or allergies, try a small amount on your inner arm first.</p></div></details>
+    </div>
+  </div>
+</section>
+</main>
+<section class="join-band" id="join" aria-labelledby="join-footer-title">
+  <img class="emblem" src="images/rose.svg" alt="" width="38" height="26">
+  <h2 id="join-footer-title">join the list</h2>
+  <p>For special offers and exclusive product updates.</p>
+  <form class="join-form" data-source="footer">
+    <label class="sr-only" for="join-footer-email">Email address</label>
+    <input id="join-footer-email" type="email" name="email" placeholder="email address" autocomplete="email" required>
+    <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn" type="submit">join</button>
+    <p class="form-msg" role="status"></p>
+  </form>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="images/logo.svg" alt="mela" width="88" height="86">
+      <p>Woman-owned. Made by hand<br>in small batches in New York.</p>
+    </div>
+    <nav aria-label="Products"><h3>shop</h3><a href="body-balm">Body Balm</a><a href="face-oil">Beauty Face Oil</a><a href="hair-oil">Ritual Hair Oil</a></nav>
+    <nav aria-label="About mela"><h3>mela</h3><a href="about">about</a><a href="connect">connect</a><a href="connect#questions">shipping &amp; returns</a></nav>
+    <nav aria-label="Elsewhere"><h3>elsewhere</h3><a href="https://www.etsy.com/shop/melabotanical" target="_blank" rel="noopener">etsy</a></nav>
+  </div>
+  <p class="footer-base">&copy; <span data-year>2026</span> mela &middot; New York, NY</p>
+</footer>
+</body>
+</html>
